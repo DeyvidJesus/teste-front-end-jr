@@ -1,0 +1,46 @@
+@import "variables";
+
+.brands {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+
+  > h2 {
+    color: $pink-500;
+    width: 90vw;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  .product-carousel {
+    width: 94vw;
+    margin: 40px 0;
+  }
+
+  .slick-next {
+    right: 25px;
+    position: absolute !important;
+    color: black !important;
+    height: 60px;
+    width: 60px;
+  }
+
+  .slick-slide {
+    display: flex !important;
+    justify-content: center;
+  }
+}
+
+.brand-circle {
+  width: 211px !important;
+  height: 211px !important;
+  border-radius: 9999px !important;
+  display: flex !important;
+  box-shadow: 0 4px 8px $gray-100;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}

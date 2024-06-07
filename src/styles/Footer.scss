@@ -1,0 +1,149 @@
+@import "variables";
+
+footer {
+  width: 100vw;
+  max-width: 100%;
+  background-color: $gray-900;
+  display: flex;
+  flex-direction: column;
+  color: $white;
+
+  section {
+    padding: 20px 65px;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      color: $white;
+      line-height: 32px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    > div {
+      display: flex;
+      padding: 20px 0;
+
+      .about,
+      .info {
+        width: 150px;
+      }
+
+      .about {
+        .socialMediaContainer {
+          display: flex;
+          margin-top: 60px;
+          justify-content: space-between;
+
+          img {
+            width: 22px;
+          }
+        }
+      }
+
+      .info {
+        margin: 0 40px 0 100px;
+      }
+
+      .payment {
+        width: 200px;
+        
+        div {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+            padding: 10px;
+          }
+
+          img:nth-child(1), img:nth-child(4), img:nth-child(7), img:last-child {
+            padding-left: 0;
+          }
+        }
+      }
+
+      > div {
+        font-size: 12px;
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+      }
+
+      p {
+        font-weight: 700;
+        margin-bottom: 2rem;
+        font-size: 13px;
+      }
+    }
+
+    > div:last-child {
+      flex-direction: column;
+      width: 380px;
+      background-color: $white;
+      color: #000;
+      border-radius: 10px;
+      padding: 40px 30px;
+
+      h3 {
+        color: $gray-800;
+        font-weight: 400;
+
+        strong {
+          font-weight: 700;
+        }
+      }
+
+      p {
+        padding-left: 20px;
+        font-weight: 400;
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      input {
+        padding: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        border: 2px solid $gray-100;
+        width: 250px;
+        color: $gray-100;
+      }
+
+      ::placeholder {
+        color: #C0C0C0;
+      }
+
+      button {
+        margin-left: 10px;
+        padding: 12px 15px;
+        border-radius: 4px;
+        border: none;
+        background-color: $pink-500;
+        color: $white;
+        cursor: pointer;
+        font-weight: 700;
+
+        &:hover {
+          filter: brightness(.95);
+        }
+      }
+    }
+  }
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    font-size: 10px;
+    text-transform: uppercase;
+    border-top: 2px solid $white;
+
+    > div > img {
+      margin: 0 20px;
+    }
+  }
+}
