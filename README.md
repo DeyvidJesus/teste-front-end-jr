@@ -22,7 +22,7 @@ Certifique-se de ter os seguintes softwares instalados em seu sistema:
    cd seu-repositorio
    ```
 
-2.Instale as dependências do projeto:
+2. Instale as dependências do projeto:
 
   ```bash
     npm install
